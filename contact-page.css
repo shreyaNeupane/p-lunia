@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", serif;
+}
+/* ---------------header ------------------------- */
+.header {
+  height: 28px;
+  background-image: linear-gradient(to right, rgb(29, 159, 179), rgb(1, 1, 87));
+  color: #f1fbff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  
+}
+.time {
+  padding: 5px 15px;
+  margin-left: 3em;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+.phoneno {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+
+.logo {
+  margin-left: 24em;
+  padding: 5px 13px;
+}
+#fb,
+#in {
+  padding: 5px 13px;
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid none; */
+}
+#insta {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+#fb:hover,
+#in:hover,
+#insta:hover {
+  background-color: white;
+  color: blue;
+}
+#fb,
+#in {
+  padding: 5px 13px;
+  border-left: 1px solid #f1fbff;
+  /* border-right: 1px solid none; */
+}
+#insta {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+.navbar {
+  overflow: hidden;
+  position: sticky;
+  background-color: rgb(1, 1, 87);
+  width: 100%;
+  top: 0;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2rem;
+}
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  float: right;
+  padding: 20px;
+}
+nav ul li a:hover {
+  color: lightblue;
+}
+
+/* -------------------query------------------- */
+.query,
+.query-header {
+  margin: 0;
+}
+.query {
+  margin-top: 5rem;
+  margin-left: 7rem;
+}
+.query-header {
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+/* ----------------------contents-------------------- */
+.body-content {
+  display: flex;
+  height: 600px;
+  margin: 0rem 10rem;
+}
+
+.body-left {
+  flex: 1;
+  max-width: 40%;
+  height: 100%;
+}
+
+.map {
+  flex: 1;
+  max-width: 60%;
+  height: 500px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* -----------------Body left side ------------ */
+.office,
+.appointment,
+.email {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 120px;
+  border: 1px solid rgba(72, 72, 72, 0.566);
+  padding: 10px;
+  margin: 1.2em auto;
+  transition: ease-in 0.3s;
+}
+.office:hover,
+.appointment:hover,
+.email:hover {
+  background-color: whitesmoke;
+}
+
+.b-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(72, 72, 72, 0.566);
+  height: 3em;
+  width: 3em;
+  color: blue;
+  margin-left: 1em;
+}
+.office-content,
+.appointment-content,
+.email-content {
+  align-items: center;
+  margin-left: 10px;
+}
+/* ---------------  footer ------------------------ */
+footer {
+  background-color: rgb(1, 1, 87);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* -------------------head-office left side */
+.f-head-office {
+  margin-top: 40px;
+  width: 30%;
+}
+
+.f-info {
+  display: flex;
+  flex-direction: column;
+}
+.f-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+}
+
+.f-logo i {
+  font-size: 18px;
+}
+
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-instagram {
+  padding: 10px;
+}
+/* ------------------right side (newsletter) */
+
+.newsletter {
+  margin-top: 40px;
+  width: 30%;
+}
+.newsletter,
+p {
+  font-size: 1.1rem;
+}
+form input {
+  font-size: medium;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 30px;
+}
+form button {
+  margin: 5px;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: rgb(255, 241, 225);
+}

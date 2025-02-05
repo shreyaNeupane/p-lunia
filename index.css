@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", serif;
+}
+/* ---------------header ------------------------- */
+.header {
+  height: 28px;
+  background-image: linear-gradient(to right, rgb(29, 159, 179), rgb(1, 1, 87));
+  position: relative;
+  color: #f1fbff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+
+
+
+  
+  
+}
+.time {
+  padding: 5px 15px;
+  margin-left: 3em;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+.phoneno {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+
+.logo {
+  margin-left: 24em;
+  padding: 5px 13px;
+}
+#fb,
+#in {
+  padding: 5px 13px;
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid none; */
+}
+#insta {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+#fb:hover,
+#in:hover,
+#insta:hover {
+  background-color: white;
+  color: blue;
+}
+#fb,
+#in {
+  padding: 5px 13px;
+  border-left: 1px solid #f1fbff;
+  /* border-right: 1px solid none; */
+}
+#insta {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  background-color: rgb(1, 1, 87);
+  width: 100%;
+  top: 28px;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2rem;
+}
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  float: right;
+  padding: 20px;
+}
+nav ul li a:hover {
+  color: lightblue;
+}

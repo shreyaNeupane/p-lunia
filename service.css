@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", serif;
+}
+/* ---------------header ------------------------- */
+.header {
+  height: 28px;
+  background-image: linear-gradient(to right, rgb(29, 159, 179), rgb(1, 1, 87));
+  color: #f1fbff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  
+}
+.time {
+  padding: 5px 15px;
+  margin-left: 3em;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+.phoneno {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+
+.logo {
+  margin-left: 24em;
+  padding: 5px 13px;
+}
+#fb,
+#in {
+  padding: 5px 13px;
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid none; */
+}
+#insta {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+#fb:hover,
+#in:hover,
+#insta:hover {
+  background-color: white;
+  color: blue;
+}
+#fb,
+#in {
+  padding: 5px 13px;
+  border-left: 1px solid #f1fbff;
+  /* border-right: 1px solid none; */
+}
+#insta {
+  padding: 5px 15px;
+  border-left: 1px solid #f1fbff;
+  border-right: 1px solid #f1fbff;
+}
+.navbar {
+  overflow: hidden;
+  position: sticky;
+  background-color: rgb(1, 1, 87);
+  width: 100%;
+  top: 0;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2rem;
+}
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  float: right;
+  padding: 20px;
+}
+nav ul li a:hover {
+  color: lightblue;
+}
+
+
+.container {
+    /* display: flex;
+    flex-direction: column; */
+  margin: 10%;
+}
+
+.intro,p {
+  margin-bottom: 5px;
+}
+.intro .heading {
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 3%;
+  font-size: 50px;
+}
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* box-sizing: border-box; */
+
+}
+.icon{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ img{
+    
+    height: 50%;
+    width: 30%;
+}
+ .service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  border: 1px solid rgb(218, 217, 217);
+  height: 300px;
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.service-header{
+    font-size: 22px;
+    font-weight: bold;
+}
+
