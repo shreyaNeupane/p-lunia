@@ -105,18 +105,20 @@ nav ul li a:hover {
 .body-left {
   flex: 1;
   max-width: 40%;
-  height: 100%;
+  height: 600px;
 }
 
 .map {
   flex: 1;
   max-width: 60%;
-  height: 500px;
+  height: 600px;
+
 }
 
 .map iframe {
   width: 100%;
-  height: 100%;
+   border-radius: 10px;
+  /* height: 100%; */
 }
 
 /* -----------------Body left side ------------ */
@@ -126,10 +128,11 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   width: 90%;
-  height: 120px;
+  height: 115px;
   border: 1px solid rgba(72, 72, 72, 0.566);
+  border-radius: 4px;
   padding: 10px;
-  margin: 1.2em auto;
+  margin-bottom: 1.2em;
   transition: ease-in 0.3s;
 }
 .office:hover,
