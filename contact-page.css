@@ -81,6 +81,9 @@ body {
 nav ul li a:hover {
   color: lightblue;
 }
+a:active{
+  color: blue;
+}
 
 /* -------------------query------------------- */
 .query,
@@ -164,37 +167,24 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-/* -------------------head-office left side */
-.f-head-office {
-  margin-top: 40px;
-  width: 30%;
-}
-
-.f-info {
-  display: flex;
-  flex-direction: column;
-}
-.f-item {
+.container{
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  gap: 10px;
+  justify-content: center;
+}
+/* -------------------head-office left side */
+.footer-contact {
+  margin-top: 40px;
+  width: 100%;
+  align-items: center;
 }
 
-.f-logo i {
-  font-size: 18px;
-}
 
-.fa-facebook-f,
-.fa-linkedin-in,
-.fa-instagram {
-  padding: 10px;
-}
 /* ------------------right side (newsletter) */
 
 .newsletter {
   margin-top: 40px;
-  width: 30%;
+  width: 80%;
 }
 .newsletter,
 p {
@@ -212,4 +202,9 @@ form button {
   border: 1px solid black;
   border-radius: 30px;
   background-color: rgb(255, 241, 225);
+}
+/* --------copy right */
+.copyright{
+  display: flex;
+  flex-direction: column;
 }
