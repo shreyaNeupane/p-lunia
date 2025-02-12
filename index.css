@@ -64,12 +64,14 @@ body {
   border-left: 1px solid #f1fbff;
   border-right: 1px solid #f1fbff;
 }
+/* -----------navbar ------------- */
 .navbar {
+  z-index: 10;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   background-color: rgb(1, 1, 87);
   width: 100%;
-  top: 28px;
+  top: 0;
 }
 .navbar ul {
   list-style-type: none;
