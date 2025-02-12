@@ -136,12 +136,14 @@ a:active{
   border-radius: 4px;
   padding: 10px;
   margin-bottom: 1.2em;
-  transition: ease-in 0.3s;
+  
+  transition: transform 0.5s ease-out, box-shadow 0.3s ease-in-out;
+
 }
 .office:hover,
 .appointment:hover,
 .email:hover {
-  background-color: whitesmoke;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .b-logo {
