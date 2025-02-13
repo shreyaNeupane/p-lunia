@@ -166,27 +166,40 @@ a:active{
 footer {
   background-color: rgb(1, 1, 87);
   color: white;
+}
+
+  .container{
   display: flex;
+  align-items: flex-start;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px; 
 }
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+
 /* -------------------head-office left side */
 .footer-contact {
-  margin-top: 40px;
-  width: 100%;
-  align-items: center;
+   
+   width: 50%;
+   
+  
+}
+.footer-contact , i{
+   padding: 6px;
+}
+.footer-social , i{
+  color: white;
 }
 
 
 /* ------------------right side (newsletter) */
 
 .newsletter {
-  margin-top: 40px;
-  width: 80%;
+   flex: 1;
+   z-index: 10;
+   position: relative;
+  
+  
 }
 .newsletter,
 p {
@@ -199,14 +212,25 @@ form input {
   border-radius: 30px;
 }
 form button {
+  position: absolute;
   margin: 5px;
-  padding: 7px;
+  padding: 10px;
   border: 1px solid black;
   border-radius: 30px;
   background-color: rgb(255, 241, 225);
+  bottom: 4px;
+  
+  right: 330px;
 }
-/* --------copy right */
-.copyright{
-  display: flex;
-  flex-direction: column;
-}
+
+ footer .bottom-bar {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #1E5EA6;
+            margin-top: 20px;
+            color: #A5A5A5;
+        }
+        .footer .bottom-bar a {
+            color: #A5A5A5;
+            text-decoration: none;
+        }
