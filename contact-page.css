@@ -180,7 +180,7 @@ footer {
   color: white;
 }
 
-  .container{
+  .footer-container{
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;

@@ -154,7 +154,6 @@ nav ul li a:hover {
 }
 .icons {
   display: flex;
-  gap: 40%;
   color: blue;
   
 }
@@ -162,14 +161,26 @@ nav ul li a:hover {
     font-size: 20px;
 }
 .major-clients img{
-   width: 10%;
-   margin: 10px;
-   
+   width: 13%;
+   margin: 5px;
 
 }
 .icons p{
   margin: 22px;
      color: black;
+}
+
+/*  ---arrows--- */
+.arrows{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  font-size: 30px;
+} 
+.arrows ,.left-arrow ,.right-arrow{
+  
+  padding: 15px;
 }
 
 
@@ -179,12 +190,22 @@ footer {
   color: white;
 }
 
-  .container{
+  .footer-container{
+    position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px; 
+}
+.footer-contact .newsletter::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 2px;
+  top: 13px;
+  left: 60%;
+  background: #0796fe;
 }
 
 
