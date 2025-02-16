@@ -58,6 +58,7 @@ body {
   border-left: 1px solid #f1fbff;
   border-right: 1px solid #f1fbff;
 }
+/* -----------   navabar ------------------- */
 .navbar {
   overflow: hidden;
   position: sticky;
@@ -83,6 +84,10 @@ nav ul li a:hover {
 }
 a:active{
   color: blue;
+}
+.toogle-btn{
+  color: white;
+  display: none;
 }
 
 /* -------------------query------------------- */
@@ -256,4 +261,17 @@ form button {
 .bottom-bar  a:link {
   text-decoration: none;
   color: white
+}
+
+
+/* ----------------- Media query------------------- */
+@media (max-width: 765px) {
+  
+  .header {
+    display: none;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
