@@ -58,30 +58,44 @@ body {
   border-right: 1px solid #f1fbff;
 }
 /* ------------navbar------------------- */
-.navbar {
-  z-index: 5;
-  overflow: hidden;
-  position: sticky;
+
+nav {
+  height: 80px;
+  width: 100%;
   background-color: rgb(1, 1, 87);
   width: 100%;
-  top: 0;
+ 
 }
-.navbar ul {
+nav ul {
   list-style-type: none;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 2rem;
-}
-.navbar li a {
-  text-decoration: none;
-  color: white;
   float: right;
-  padding: 20px;
+  margin-right: 20px;
 }
-nav ul li a:hover {
+nav ul li {
+   display: inline-block;
+   line-height: 50px;
+   margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+}
+a.active,a:hover{
   color: lightblue;
 }
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display:none;
+}
+#check{
+  display: none;
+}
+
 /* ----------------- container body ------------------ */
 .team-container{
   max-width: 1400px;
@@ -306,5 +320,61 @@ hr {
     width: 95%;
     max-width: 180px;
     font-size: 1rem;
+  }
+}
+/*  ----------------- navbar( media query) */
+/* ----------------- Media query------------------- */
+@media (max-width: 992px) {
+  
+  .header {
+    display: none;
+  }
+  label.logo{
+    font-family: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+   .header {
+    display: none;
+  }
+  .checkbtn{
+    display: block;
+    font-size: 20px;
+    
+  }
+ 
+  ul{
+
+    box-sizing: border-box;
+
+    margin-top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color:rgb(1, 1, 87); 
+    top: 80px;
+    left: -100%;
+    /* text-align: center; */
+    transition: all .5s;
+  }
+  nav ul li{
+    /* z-index: 100; */
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+  nav ul li a{
+    font-size: 18px;
+  }
+   a:hover,a.active{
+    background: none;
+    color: lightblue;
+  }
+  #check:checked ~ul{
+    left:0;
   }
 }

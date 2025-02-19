@@ -60,29 +60,43 @@ body {
   border-right: 1px solid #f1fbff;
 }
 
-.navbar {
-  z-index: 10;
-  overflow: hidden;
-  position: fixed;
+/* ------------navbar------------------- */
+
+nav {
+  height: 80px;
+  width: 100%;
   background-color: rgb(1, 1, 87);
   width: 100%;
-  top: 0px;
+ 
 }
-.navbar ul {
+nav ul {
   list-style-type: none;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 2rem;
+  float: right;
+  margin-right: 20px;
 }
-.navbar li a {
-  text-decoration: none;
+nav ul li {
+   display: inline-block;
+   line-height: 50px;
+   margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+}
+a.active,a:hover{
+  color: lightblue;
+}
+.checkbtn{
+  font-size: 30px;
   color: white;
   float: right;
-  padding: 20px;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display:none;
 }
-nav ul li a:hover {
-  color: lightblue;
+#check{
+  display: none;
 }
 /*  -------------cabout us --------------- */
 .container {
@@ -332,13 +346,59 @@ hr {
 }
 
 /* ----------------- Media query------------------- */
-@media (max-width: 765px) {
+/*  ----------------- navbar( media query) */
+/* ----------------- Media query------------------- */
+@media (max-width: 992px) {
   
   .header {
     display: none;
   }
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
+  label.logo{
+    font-family: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+   .header {
+    display: none;
+  }
+  .checkbtn{
+    display: block;
+    font-size: 20px;
+    
+  }
+ 
+  ul{
+
+    box-sizing: border-box;
+
+    margin-top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color:rgb(1, 1, 87); 
+    top: 80px;
+    left: -100%;
+    /* text-align: center; */
+    transition: all .5s;
+  }
+  nav ul li{
+    /* z-index: 100; */
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+  nav ul li a{
+    font-size: 18px;
+  }
+   a:hover,a.active{
+    background: none;
+    color: lightblue;
+  }
+  #check:checked ~ul{
+    left:0;
   }
 }
