@@ -83,14 +83,15 @@ nav ul li a:hover {
   color: lightblue;
 }
 /* ----------------- container body ------------------ */
-
-.container {
-  margin: 6% 12%;
+.team-container{
+  max-width: 1400px;
+  padding: 50px;
+  margin: 0 auto;
 }
 .intro{
   position: relative;
 }
-.heading::before{
+h2::before{
    content: "";
   position:absolute;
   border-bottom: 30px solid;
@@ -101,26 +102,21 @@ nav ul li a:hover {
   top: 65%;
   
 }
-.intro .heading {
-  margin-left: 30px;
-  margin-top: 0;
-  margin-bottom: 3%;
-  font-size: 50px;
-}
+
 
 .team-members {
-  display: flex;
-  justify-content: space-evenly;
+ display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .team-member {
-  gap: 10px;
-  margin-bottom: 10px;
-  height: 380px;
-  width: 290px;
   position: relative;
+   padding: 25px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .photo
@@ -133,13 +129,15 @@ img {
 .introduction {
   position: absolute;
   text-align: center;
-  height: 70px;
-  width: 230px;
-
+  height: auto;
+  width: 80%;
+   max-width: 200px;
   border-radius: 8px;
   background-color: rgb(217, 242, 251);
-  bottom: 28px;
-  left: 27px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
 }
 .name {
   margin-top: 5px;
@@ -275,5 +273,38 @@ hr {
   .navbar ul {
     flex-direction: column;
     align-items: center;
+  }
+}
+/* -------------- container (media query)---------- */
+@media (max-width: 1024px) {
+  .team-members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .introduction{
+    /* width: 90%; */
+    max-width: 180px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .introduction{
+    /* width: 90%; */
+    max-width: 160px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+  .introduction{
+    width: 95%;
+    max-width: 180px;
+    font-size: 1rem;
   }
 }

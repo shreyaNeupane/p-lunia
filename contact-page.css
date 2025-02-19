@@ -11,8 +11,7 @@ body {
   color: #f1fbff;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  
+  align-items: center; 
 }
 .time {
   padding: 5px 15px;
@@ -59,60 +58,43 @@ body {
   border-right: 1px solid #f1fbff;
 }
 /* -----------   navabar ------------------- */
-nav{
-  position: relative;
-}
+
 .navbar {
-  overflow: hidden;
-  position: sticky;
+  height: 80px;
+  width: 100%;
   background-color: rgb(1, 1, 87);
   width: 100%;
-  top: 0;
+ 
 }
 .navbar ul {
   list-style-type: none;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 2rem;
-}
-.nav li a {
-  text-decoration: none;
-  color: white;
   float: right;
-  padding: 20px;
+  margin-right: 20px;
 }
-nav ul li a:hover {
+.navbar ul li {
+   display: inline-block;
+   line-height: 50px;
+   margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+}
+a.active,a:hover{
   color: lightblue;
 }
-a:active{
-  color: blue;
-}
-.toogle-btn{
+.checkbtn{
+  font-size: 30px;
   color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display:none;
+}
+#check{
   display: none;
 }
-
-  .dropdown_menu{
-    display: none;
-    background-color: rgb(1, 1, 87);
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  .dropdown_menu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .dropdown_menu.open{
-    height: 240px;
-  }
 
 /* -------------------query------------------- */
 .query,
@@ -211,7 +193,7 @@ a:active{
 } */
 footer{
  padding: 2rem;
-  background-color:rgb(1, 1, 87);;
+  background-color:rgb(1, 1, 87);
   color: #ffffff;
 }
 .footer-wraper {
@@ -324,17 +306,40 @@ hr {
   .header {
     display: none;
   }
-  .navbar .links{
-    display: none;
+  label.logo{
+    font-family: 30px;
+    padding-left: 50px;
   }
-   .navbar .toogle-btn{
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
     display: block;
   }
-  .dropdown_menu{
-    display: block;
+  ul{
+    position: fixed;
+    width: 100%;
+    background-color:rgb(1, 1, 87); 
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
   }
-  /* .navbar ul {
-    flex-direction: column;
-    align-items: center;
-  } */
+  .nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .nav ul li a{
+    font-size: 20px;
+  }
+   a:hover,a.active{
+    background: none;
+    color: lightblue;
+  }
+  #check:checked ~ul{
+    left: 0;
+  }
 }

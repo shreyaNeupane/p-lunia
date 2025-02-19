@@ -90,14 +90,8 @@ nav ul li a:hover {
 }
 .intro {
   position: relative;
-  margin-bottom: 5px;
+  
 }
-.service,
-p {
-  padding: 5px;
-}
-
-
 h2::before{
    content: "";
   position:absolute;
@@ -110,12 +104,6 @@ h2::before{
   
 }
 
-.intro .heading {
-  margin-left: 30px;
-  margin-top: 0;
-  margin-bottom: 3%;
-  font-size: 50px;
-}
 .services {
    display: grid;
   justify-items: center;
@@ -133,12 +121,7 @@ h2::before{
       box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.429);
 
 }
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-}
+
 
 
 /* ---------------  footer ------------------------ */
