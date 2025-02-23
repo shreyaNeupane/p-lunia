@@ -98,10 +98,13 @@ a.active,a:hover{
 #check{
   display: none;
 }
-/*  -------------cabout us --------------- */
-.container {
-  margin: 6% 12%;
+/*  -------------about us --------------- */
+.main-about-container {
+  max-width: 1400px;
+  padding: 50px;
+  margin: 0 auto;
 }
+
 .description::before {
   content: "";
   position: absolute;
@@ -118,31 +121,36 @@ a.active,a:hover{
   height: 0;
   bottom: 375px;
 }
+.about-us {
+   display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .about-us-img img {
   height: 300px;
   width: 400px;
   border-radius: 10px;
 }
+
+
 .about-us-img {
-  flex: 1;
-}
-.about-us {
-  display: flex;
-  position: relative;
-}
+position: relative;
+  flex: 1 1 45%;}
+
+ .description {flex: 1 1 45%; }
+ 
 
 .img2 {
   position: absolute;
   top: 150px;
   left: 100px;
 }
-.description {
-  flex: 1;
-}
+
 /* -----------  vision Mission ------------------- */
-.container .Vision-Mission {
+.vm-headers {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-bottom: 1rem;
 }
 
@@ -152,10 +160,12 @@ button {
   border-color: rgb(61, 188, 252);
   padding: 10px;
 }
-.vision-container {
+.vision-container ,.mission-container   {
   display: flex;
+  
 }
-.Vision-paragraph {
+.Vision-paragraph , .mission-paragraph {
+  text-align: left;
   width: 70%;
   position: relative;
 }
@@ -167,7 +177,17 @@ button {
   background: #0a2e4e;
   left: 2px;
   top: 50px;
-  /* transition: all 0.7sease; */
+
+}
+.mission-paragraph h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: #0a2e4e;
+  left: 2px;
+  top: 50px;
+ 
 }
 .Vision-paragraph h2::before {
   content: "";
@@ -177,13 +197,26 @@ button {
   background: #0a2e4e;
   left: 2px;
   top: 60px;
-  /* transition: all 0.7sease; */
+}
+.mission-paragraph h2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #0a2e4e;
+  left: 2px;
+  top: 60px;
 }
 
-.vision-img,
+.vision-img 
 img {
   width: 399px;
   height: 300px;
+}
+.mission.img img{
+  width: 399px;
+  height: 300px;
+  padding: 15px;
 }
 
 /*----------------- know the properitor ---------- */
@@ -229,13 +262,9 @@ img {
 .properitor-paragraph {
   flex: 1;
 }
-
+ 
 /* ---------------  footer ------------------------ */
-/* footer{
- margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+
 footer{
  padding: 2rem;
   background-color:rgb(1, 1, 87);;
@@ -347,7 +376,6 @@ hr {
 
 /* ----------------- Media query------------------- */
 /*  ----------------- navbar( media query) */
-/* ----------------- Media query------------------- */
 @media (max-width: 992px) {
   
   .header {
@@ -361,6 +389,7 @@ hr {
     font-size: 16px;
   }
 }
+
 @media (max-width: 858px){
    .header {
     display: none;
@@ -368,13 +397,9 @@ hr {
   .checkbtn{
     display: block;
     font-size: 20px;
-    
-  }
- 
-  ul{
-
-    box-sizing: border-box;
-
+ }
+ ul{
+   box-sizing: border-box;
     margin-top: 0;
     z-index: 100;
     position: fixed;
@@ -402,3 +427,47 @@ hr {
     left:0;
   }
 }
+/* ------------- main-container (media-query)----------- */
+@media (max-width: 767px){
+  body{
+    font-size: 13px;
+  }
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .about-us {
+   display: flex;
+   border: 1px solid;
+   flex-direction: column;
+ 
+}
+.about-us-img {
+  border: 1px solid;
+  padding: 10px;
+   position: relative;
+}
+.img2 {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  
+}
+
+.about-us, .Vision-Mission, .properitor{
+  flex-direction: column;
+}
+.about-us-img, .description, .left-side, .right-side {
+  flex: 1 1 100%;
+}
+.vision-container ,.mission-container   {
+  display: flex;
+  flex-direction: column;
+}
+.Vision-paragraph , .mission-paragraph {
+  text-align: left;
+  width: 100%;
+}
+}
+
